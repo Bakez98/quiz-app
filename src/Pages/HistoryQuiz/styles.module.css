@@ -1,0 +1,60 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.startQuiz{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.QuestionWrapper {
+  margin: 20px;
+  padding: 0;
+}
+
+.Question {
+  margin-bottom: 20px;
+}
+
+.Question > ul {
+  margin: 10px 0;
+  padding: 0;
+}
+
+.choices {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.choices input[type="radio"] {
+  margin-right: 10px;
+}
+
+.choices label {
+  display: inline-block;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.choices label:hover {
+  color: #f7df1e;
+}
+
+
+
+.ButtonWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}

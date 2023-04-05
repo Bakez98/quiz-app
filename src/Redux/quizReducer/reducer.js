@@ -8,7 +8,7 @@ const initState = {
 }
 
 
-export function QuizReducer(state= initState, action){
+export default function QuizReducer(state= initState, action){
     switch (action.type) {
         case QUIZ_CONSTANTS.FETCH_LOADING:
             return{
@@ -27,10 +27,14 @@ export function QuizReducer(state= initState, action){
                 loading:false,
                 Questions:action.payload
             }
-            
+        case QUIZ_CONSTANTS.CLEAR_SUCCESS:
+            return{
+                ...state,
+                Questions:[]
+            }  
     
         default:
-            state;
+           return state;
     }
 
 }

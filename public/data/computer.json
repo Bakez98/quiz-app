@@ -1,0 +1,64 @@
+{
+    "Questions": [
+      {
+        "id": "1",
+        "question": "Which of the following is hardware?",
+        "choices" : ["Monitor", "Program","Operating "],
+        "right-answer": "Monitor"
+      },
+      {
+        "id": "2",
+        "question": "Which of the following is software? ",
+        "choices" : ["Keyboard", "Microsoft Word","Speakers"],
+        "right-answer": "Microsoft Word"
+      },
+      {
+        "id": "3",
+        "question": "What do you call the “brain” of the computer?",
+        "choices" : ["Hard Drive", "Central Processing unit","Database"],
+        "right-answer": "Central Processing unit"
+      },
+      {
+        "id": "4",
+        "question": "What does RAM stand for?",
+        "choices" : ["Review Admittance Monitor", "Random Access Monitor","Random Access Memory"],
+        "right-answer": "Random Access Memory"
+      },
+      {
+        "id": "5",
+        "question": "What does BIOS stand for?",
+        "choices" : ["Basic inbox outbox system", "Basic input output system","Between input output system"],
+        "right-answer": "Basic input output system"
+      },
+      {
+        "id": "6",
+        "question": "What is the function of the hard drive disk?",
+        "choices" : ["Memory", "Storage","Visual display"],
+        "right-answer": "Storage"
+      },
+      {
+        "id": "7",
+        "question": "What is another word for applications?",
+        "choices" : ["Drivers", "Peripherals","Programs"],
+        "right-answer": "Programs"
+      },
+      {
+        "id": "8",
+        "question": "Reducing a window until it becomes a button on the taskbar is called?",
+        "choices" : ["Maximize", "Collapse","Minimize"],
+        "right-answer": "Minimize"
+      },
+      {
+        "id": "9",
+        "question": "Microsoft Office is an example of",
+        "choices" : ["Integrated software", "Desktop publishing ","A database"],
+        "right-answer": "Integrated software"
+      },
+      {
+        "id": "10",
+        "question": "Which of the following is an example of an operating system?",
+        "choices" : ["Microsoft Office", "Microsoft Word","Microsoft Windows"],
+        "right-answer": "Microsoft Windows"
+      }
+    ]
+  }

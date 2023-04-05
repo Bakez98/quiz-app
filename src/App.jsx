@@ -6,8 +6,6 @@ import { FetchQuestions } from './Redux/quizReducer/actions';
 // import { useEffect } from 'react';
 
 
-// to run the server for fetching data from it :
-//npx json-server --watch data/db.json --port 7000
 
 function App() {
 
@@ -16,6 +14,7 @@ function App() {
   const MathQuiz = lazy(() => import('./Pages/MathQuiz/index'));
   const PhysQuiz = lazy(() => import('./Pages/PhysQuiz/index'));
   const SportsQuiz = lazy(() => import('./Pages/SportsQuiz/index'));
+  const NotFound = lazy(()=> import('./Pages/NotFound/NotFound'))
 
   return (
     <div className="App">
@@ -28,6 +27,7 @@ function App() {
         <Route path="/MathQuiz" element={<MathQuiz />} />
         <Route path="/PhysQuiz" element={<PhysQuiz />} />
         <Route path="/SportsQuiz" element={<SportsQuiz />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       </Suspense>
     </div>

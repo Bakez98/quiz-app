@@ -14,12 +14,12 @@ export function FetchQuestions(catagory) {
         })
 
         try {
-            const res = await fetch("http://localhost:7000/biology_questions")
+            const res = await fetch(`data/${catagory}.json`)
             const Fetched_Questions = await res.json()
-
+            
             dispatch({
                 type:QUIZ_CONSTANTS.FETCH_QUIZ_QUESTIONS,
-                payload:Fetched_Questions,
+                payload:Fetched_Questions.Questions,
             })
             
         } catch (error) {
