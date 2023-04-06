@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { FetchQuestions } from "../../Redux/quizReducer/actions";
 import styles from "./styles.module.css";
 import { useNavigate } from "react-router-dom";
+import Spinner from "../../Components/spinner";
 
 const ComputerQuiz = () => {
   const [startQuiz, setStartQuiz] = useState(false);
@@ -49,7 +50,7 @@ const ComputerQuiz = () => {
     setCurrentQuestionIndex((prev) => prev - 1);
   };
 
-  if (loading) return <div>Loading .....</div>;
+  if (loading) return <div><Spinner/></div>;
   if (error) return nav("/NotFound");
 
   const currentQuestion = Questions[currentQuestionIndex];
