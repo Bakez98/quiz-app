@@ -2,8 +2,9 @@ import NavBar from './Components/NavBar'
 import Home from './Pages/Home/Home';
 import { Route, Routes } from 'react-router-dom';
 import React, { lazy, Suspense, useEffect } from 'react';
-import { FetchQuestions } from './Redux/quizReducer/actions';
-// import { useEffect } from 'react';
+import ProtecedRoute from './Components/ProtectedRoute/ProtectedRoute';
+import Login from './Pages/Login';
+
 
 
 
@@ -21,13 +22,19 @@ function App() {
       <NavBar/>
       <Suspense fallback={<div>Loading ......</div>}>
       <Routes>
-        <Route index element={<Home/>} />
-        <Route path="/ComputerQuiz" element={<ComputerQuiz />} />
-        <Route path="/HistoryQuiz" element={<HistoryQuiz />} />
-        <Route path="/MathQuiz" element={<MathQuiz />} />
-        <Route path="/PhysQuiz" element={<PhysQuiz />} />
-        <Route path="/SportsQuiz" element={<SportsQuiz />} />
+        <Route index element={<Login/>} />
+        <Route path="/Home" element={<ProtecedRoute element={<Home/>} />} />
+        <Route path="/ComputerQuiz" element={<ProtecedRoute element={<ComputerQuiz/>} />} />
+        <Route path="/HistoryQuiz" element={<ProtecedRoute element={<HistoryQuiz/>} />} />
+        <Route path="/MathQuiz" element={<ProtecedRoute element={<MathQuiz/>} />} />
+        <Route path="/PhysQuiz" element={<ProtecedRoute element={<PhysQuiz/>} />} />
+        <Route path="/SportsQuiz" element={<ProtecedRoute element={<SportsQuiz/>} />} />
         <Route path="*" element={<NotFound />} />
+
+
+
+
+
       </Routes>
       </Suspense>
     </div>
