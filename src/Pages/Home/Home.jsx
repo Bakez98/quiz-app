@@ -9,9 +9,16 @@ import Image4 from "../../assets/Image4.webp"
 import Image5 from "../../assets/Image5.webp"
 
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import Spinner from "../../Components/spinner/index"
 
 
 const Home = () => {
+
+    const {loading} = useSelector(state =>  state.authReducer);
+
+    if(loading) return <div><Spinner/></div>
+
   return (
     <div className={styles.Wrapper}>
     <Card style={{ width: '25rem' , height: '20rem'}}>

@@ -1,0 +1,13 @@
+.logoutBox{
+    background-color: white;
+}
+.LogOutBtn {
+    color: white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .LogOutBtn:hover {
+    color: #ccc;
+    transform: scale(1.2);
+  }
+  

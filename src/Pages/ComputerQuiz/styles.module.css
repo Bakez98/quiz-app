@@ -50,9 +50,17 @@
   
 
 
-  .ButtonWrapper{
+  .StartButtonWrapper{
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .ButtonWrapper{
+    display: flex;
+    flex-direction: row;
     gap: 10px;
     justify-content: center;
     align-items: center;

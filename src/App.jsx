@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import React, { lazy, Suspense, useEffect } from 'react';
 import ProtecedRoute from './Components/ProtectedRoute/ProtectedRoute';
 import Login from './Pages/Login';
+import Spinner from "./Components/spinner/index"
 
 
 
@@ -20,7 +21,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
-      <Suspense fallback={<div>Loading ......</div>}>
+      <Suspense fallback={<div><Spinner/></div>}>
       <Routes>
         <Route index element={<Login/>} />
         <Route path="/Home" element={<ProtecedRoute element={<Home/>} />} />
