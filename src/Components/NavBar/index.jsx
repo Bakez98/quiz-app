@@ -5,8 +5,8 @@ import { BiLogOut } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../Redux/authReducer/actions";
-import styles from "./styles.module.css";
-
+import styles from "./styles.modules.css";
+import Spinner from "../spinner";
 
 const NavBar = () => {
   const { isAuth,loading } = useSelector((state) => state.authReducer);
