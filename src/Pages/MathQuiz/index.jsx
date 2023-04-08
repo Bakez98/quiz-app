@@ -46,7 +46,7 @@ const MathQuiz = () => {
     nav("/Home")
   };
 
-  if (loading) return <div><Spinner/></div>;
+  if(loading) return <div className='mySpinner'><Spinner/></div>
   if (error) return nav("/NotFound");
 
   const currentQuestion = Questions[currentQuestionIndex];

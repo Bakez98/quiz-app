@@ -9,7 +9,7 @@ import store from './Redux/store'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
       <Provider store={store}>
-    <App />
+    <App/>
     </Provider>
   </BrowserRouter>,
 )

@@ -50,7 +50,7 @@ const ComputerQuiz = () => {
     setCurrentQuestionIndex((prev) => prev - 1);
   };
 
-  if (loading) return <div><Spinner/></div>;
+  if (loading) return <div className={styles.mySpinner}><Spinner/></div>;
   if (error) return nav("/NotFound");
 
   const currentQuestion = Questions[currentQuestionIndex];
@@ -59,7 +59,7 @@ const ComputerQuiz = () => {
   return (
     <div className={styles.wrapper}>
       {startQuiz ? (
-        <div>
+        <div  className={styles.QuestionWrapper}>
           <h2 className={styles.Question}>{currentQuestion.question}</h2>
           <ul>
             {currentQuestion.choices.map((choice) => (

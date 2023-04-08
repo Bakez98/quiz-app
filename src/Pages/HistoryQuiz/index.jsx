@@ -46,7 +46,7 @@ const HistoryQuiz = () => {
     nav("/Home")
   };
 
-  if (loading) return <div><Spinner/></div>;
+  if (loading) return <div className={styles.mySpinner}><Spinner/></div>;
   if (error) return nav("/NotFound");
 
   const currentQuestion = Questions[currentQuestionIndex];
