@@ -5,11 +5,11 @@ import { BiLogOut } from "react-icons/bi";
 import { useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { logout } from "../../Redux/authReducer/actions";
-
+import styles from "./styles.module.css";
 
 
 const NavBar = () => {
-  const { isAuth } = useSelector((state) => state.authReducer);
+  const { isAuth,loading } = useSelector((state) => state.authReducer);
   const dispatch = useDispatch();
   const nav = useNavigate();
 
@@ -21,6 +21,7 @@ const NavBar = () => {
     });
   }
 
+  if (loading) return <div className={styles.mySpinner}><Spinner/></div>;
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
