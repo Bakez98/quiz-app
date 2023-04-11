@@ -17,10 +17,12 @@
 .QuestionWrapper {
   margin: 20px;
   padding: 0;
+  max-width: 200px;
 }
 
 .Question {
   margin-bottom: 20px;
+  color: aliceblue;
 }
 
 .Question > ul {
@@ -31,6 +33,7 @@
 .choices {
   list-style: none;
   margin-bottom: 10px;
+  
 }
 
 .choices input[type="radio"] {
@@ -50,7 +53,7 @@
 
 
 
-.ButtonWrapper{
+.StartButtonWrapper{
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -58,12 +61,28 @@
   align-items: center;
   margin-top: 50px;
 }
+.ButtonWrapper{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+
+.loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
 
 
 
 .mySpinner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 200px;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-top: 200px;
 }
